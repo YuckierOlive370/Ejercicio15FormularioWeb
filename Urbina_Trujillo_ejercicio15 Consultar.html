@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbina_Trujillo_ejercicio15</title>
+    <link rel="stylesheet" href="Mod.css">
 </head>
 <body>
     <h1>Consultar prestamo de Equipos</h1>
-    <form action="procesar" method="postear">
+    <section>
+            <form action="procesar" method="postear">
         <label for="Folio">Folio:</label>
         <input type="text" name="Folio">
         <br>
@@ -45,8 +47,13 @@
         <label for="Firma">Firma:</label>
         <input type="text" name="Prestamo" disabled>
         <br>
-        <a href="Urbina_Trujillo_ejercicio15 Consultar.html"><input type="button" value="Consultar"></a>
-        <a href="index.html"><input type="button" value="Volver al menu"></a>
+        <form action="Urbina_Trujillo_ejercicio15 Consultar.html" method="get">
+            <button type="submit" id="consultar">Consultar</button>
+        </form>
+        <form action="index.html" method="get">
+            <button type="submit" id="menu">Volver al menu</button>
+        </form>
     </form>
+    </section>
 </body>
 </html>

@@ -4,10 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbina_Trujillo_ejercicio15</title>
+    <link rel="stylesheet" href="Mod.css">
 </head>
 <body>
     <h1>Alta de Usuarios</h1>
-    <form action="procesar" method="postear">
+    <section>
         <label for="Nombre">Nombre:</label>
         <input type="text" name="Nombre">
         <br>
@@ -27,9 +28,16 @@
         <input type="radio" name="P">
         <label name="Profesor">Profesor</label>
         <br>
-        <a href="Urbina_Trujillo_ejercicio15 ModuloUsuariosAlta.html"><input type="button" value="Dar de Alta"></a>
-        <a href="Urbina_Trujillo_ejercicio15 ModuloUsuariosConsulta.html"><input type="button" value="Consultar"></a>
-        <a href="index.html"><input type="button" value="Volver al menu"></a>
-    </form>
+
+        <form action="Urbina_Trujillo_ejercicio15 ModuloUsuariosAlta.html" method="get">
+            <button type="submit" id="alta">Dar de Alta</button>
+        </form>
+        <form action="Urbina_Trujillo_ejercicio15 ModuloUsuariosConsulta.html" method="get">
+            <button type="submit" id="consultar">Consultar</button>
+        </form>
+        <form action="index.html" method="get">
+            <button type="submit" id="menu">Volver al menu</button>
+        </form>
+    </section>
 </body>
 </html>

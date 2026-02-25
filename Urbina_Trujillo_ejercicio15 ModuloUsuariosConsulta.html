@@ -4,12 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Urbina_Trujillo_ejercicio15</title>
+    <link rel="stylesheet" href="Mod.css">
 </head>
 <body>
     <h1>Consultas de Usuarios</h1>
-    <form action="procesar" method="postear">
+    <section>
         <label for="ID Alumno">ID Alumno:</label>
-        <input type="text" name="ID" disabled>
+        <input type="text" name="ID">
         <label for="Nombre">Nombre:</label>
         <input type="text" name="Nombre" disabled>
         <br>
@@ -28,8 +29,12 @@
         <input type="radio" name="P" disabled>
         <label name="Profesor">Profesor</label>
         <br>
-        <a href="Urbina_Trujillo_ejercicio15 Consultar.html"><input type="button" value="Consultar"></a>
-        <a href="Urbina_Trujillo_ejercicio15 ModuloUsuariosAlta.html"><input type="button" value="Volver atras"></a>
-    </form>
+        <form action="Urbina_Trujillo_ejercicio15 ModuloUsuariosConsulta.html" method="get">
+            <button type="submit" id="consultar">Consultar</button>
+        </form>
+        <form action="Urbina_Trujillo_ejercicio15 ModuloUsuariosAlta.html" method="get">
+            <button type="submit" id="alta">Volver atras</button>
+        </form>
+    </section>
 </body>
 </html>
